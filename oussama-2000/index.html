@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>hello</title>
+  </head>
+
+  <body id="000">
+    <div class="content">
+      <header id="1">
+        <a href="https://facebook.com" target="_blank"
+          ><img
+            class="facebooklogo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsqH8D5CIm4-D3XELTRnvxRoBEBNhOlNHJ2Q&usqp=CAU"
+            alt="facebooklogo"
+        /></a>
+        <a href="https://instagram.com" target="_blank"
+          ><img
+            class="instagramlogo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYfsXL5y3OsYTONsNfXRkNGex67DwvuD8I1Q&usqp=CAU"
+            alt="instagramlogo"
+        /></a>
+        <a href="https://twiter.com" target="_blank"
+          ><img
+            class="twiterlogo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fj1vqat9XLO4cFwOG1uFqLXYDcISiYil2w&usqp=CAU"
+            alt="twiterlogo"
+        /></a>
+
+        <img
+          class="searchlogo"
+          src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Logos-Google-Web-Search-icon.png"
+          alt="searchlogo"
+          onclick="search_onclick()"
+        />
+        <button class="loginbutton dontChangeColor" onclick="my_cart()">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/9645/9645414.png"
+            alt=""
+            width="30px"
+          />
+          <div
+            class="in_cart"
+            style="
+              background-color: white;
+              border-radius: 50%;
+              padding: 2px 4px;
+              font-size: 10px;
+              border: solid black 1px;
+            "
+          >
+            0
+          </div>
+        </button>
+
+        <form action="">
+          <input
+            type="search"
+            class="searchinput dontChangeColor"
+            placeholder="search"
+            onkeyup="search_result()"
+            onblur="search_onblur()"
+          />
+          <ul class="search-resulte" style="z-index: 10;">
+            <li class="resulte">one</li>
+            <li class="resulte">two</li>
+            <li class="resulte">tree</li>
+            <li class="resulte">four</li>
+            <li class="resulte">five</li>
+          </ul>
+        </form>
+        <button class="modebutton dontChangeColor" onclick="changeMode()">
+          <img src="https://cdn2.iconfinder.com/data/icons/ui-minimalist-0-1-1/16/UI_Web_Moon_Night_Night_Mode_Dark-512.png" alt="dark-mode" width="37px"/>
+          <!-- <img src="https://cdn1.iconfinder.com/data/icons/mix-ui/24/Sun_Brightness_Day_Light_Weather_Mode-512.png" alt="" width="25px"> -->
+        </button>
+      </header>
+      <nav>
+        <a href="#1"><img class="homeimg" src="home-button.png" alt="" /></a>
+        <li
+          class="home li-of-nav"
+          onmouseenter="setopacitybody()"
+          onmouseleave="getopacitybody()"
+        >
+          Home <span class="span-of-nav">▶</span>
+          <ul class="sub-menu">
+            <a href=""><li>article1</li></a>
+            <a href=""><li>article2</li></a>
+            <a href="#100"><li>article3</li></a>
+          </ul>
+        </li>
+        <li
+          class="products li-of-nav"
+          onmouseenter="setopacitybody()"
+          onmouseleave="getopacitybody()"
+        >
+          Products <span class="span-of-nav">▶</span>
+          <ul class="sub-menu">
+            <a href="#products1"><li>for home</li></a>
+            <a href="#products2"><li>tools</li></a>
+            <a href="#products3"><li>sport</li></a>
+            <a href="#products4"><li>clothes</li></a>
+          </ul>
+        </li>
+        <li
+          class="about li-of-nav"
+          onmouseenter="setopacitybody()"
+          onmouseleave="getopacitybody()"
+        >
+          About <span class="span-of-nav">▶</span>
+          <ul class="sub-menu">
+            <a href=""><li>how it work</li></a>
+            <a href=""><li>fallback</li></a>
+            <a href=""><li>comment</li></a>
+          </ul>
+        </li>
+        <li
+          class="contact li-of-nav"
+          onmouseenter="setopacitybody()"
+          onmouseleave="getopacitybody()"
+        >
+          Contact <span class="span-of-nav">▶</span>
+          <ul class="sub-menu">
+            <a href=""><li>facebook</li></a>
+            <a href=""><li>instagram</li></a>
+            <a href=""><li>email</li></a>
+          </ul>
+        </li>
+      </nav>
+
+      <main class="welcome opacity"><h1>welcome</h1></main>
+      <div class="forspace"></div>
+      <h1 class="productsid opacity">products</h1>
+      <div class="forspace"></div>
+      <div class="category-name opacity" id="products1">for home</div>
+
+      <article class="articleprodusts opacity slider">
+        <div class="image-container slide">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/77/209646/1.jpg?4574"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button1')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+
+          <h3 class="products-name changeColor">moninix</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://pam.ma/wp-content/uploads/2021/07/les-tapis-marocains.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/63/280146/1.jpg?7416"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button2')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">korsi mli7</h3>
+          <p><del>300dh</del> 200dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.visitmorocco.com/sites/default/files/zelig.jpg"
+            target="_blank"
+            ><img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/42/242026/1.jpg?0808"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button3')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">slaya</h3>
+          <p><del>100dh</del> 50dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/32/323716/1.jpg?5324"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button4')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">rasala</h3>
+          <p><del>3000dh</del> 2500dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/76/209646/1.jpg?4356"
+              alt="" /></a
+          ><button class="cart-button">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">mslo7</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/209646/1.jpg?6669"
+              alt="" /></a
+          ><button class="cart-button">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">khlat</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/583746/1.jpg?6265"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button5')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">Machine à laver la vaisselle</h3>
+          <p><del>150dh</del> 140dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/63/605546/1.jpg?4643"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button6')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">?</h3>
+          <p><del>20dh</del> 18dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/75/120916/1.jpg?8248"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button7')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">fran dyal dow</h3>
+          <p><del>200dh</del> 180dh</p>
+        </div>
+      </article>
+
+      <div class="slide-controls">
+        <button id="prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="forspace"></div>
+
+      <div class="category-name opacity" id="products2">tools</div>
+
+      <article class="articleprodusts opacity slider">
+        <div class="image-container slide">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/29/537926/1.jpg?9986"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button8')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">tba3a</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+        <div class="image-container slide">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/00/440126/1.jpg?5824"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button9')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">makyaj</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+        <div class="image-container slide">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/705546/1.jpg?1424"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button10')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">jfaf</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+
+        <div class="image-container slide">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/05/461016/1.jpg?3816"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button11')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">ri7a</h3>
+          <p><del>20dh</del> 18dh</p>
+        </div>
+        <div class="image-container slide">
+          <a
+            href="https://www.al9anat.com/wp-content/uploads/2022/06/morocco-artisant.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/05/461016/1.jpg?3816"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button11')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">ri7a</h3>
+          <p><del>20dh</del> 18dh</p>
+        </div>
+      </article>
+
+      <div class="slide-controls">
+        <button id="prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="forspace"></div>
+      <div class="category-name opacity" id="products3">sport</div>
+      <article class="articleprodusts opacity slider">
+        <div class="image-container slide">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/917446/1.jpg?7911"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button12')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">mi7fada</h3>
+          <p><del>100dh</del> 55dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/31/917446/1.jpg?7837"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button13')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">taraza</h3>
+          <p><del>100dh</del> 55dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/52/817446/1.jpg?5537"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button14')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">sbrdila</h3>
+          <p><del>300dh</del> 200dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/73/688146/1.jpg?0260"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button15')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">sbrdilaa</h3>
+          <p><del>500dh</del> 400dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/cms/000_2022/Z-Categories/9-Sport/-Natation-sport-300-gris---.jpg"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button16')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">ndader dyal l3wm</h3>
+          <p><del>50dh</del> 30dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/08/493646/1.jpg?3283"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button17')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">bona9cha</h3>
+          <p><del>15dh</del> 15dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/12/255424/1.jpg?8533"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button18')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">picala</h3>
+          <p><del>2600dh</del> 2500dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/75/502015/1.jpg?9327"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button18')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">kora</h3>
+          <p><del>80dh</del> 50dh</p>
+        </div>
+      </article>
+
+      <div class="slide-controls">
+        <button id="prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="forspace"></div>
+      <div class="category-name opacity" id="products4">clothes</div>
+      <article class="articleprodusts opacity slider">
+        <div class="image-container slide">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/31/155936/1.jpg?1714"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button19')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">9oftan</h3>
+          <p><del>120dh</del> 100dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/77/412895/1.jpg?6927"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button20')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">l9wamej lmla7</h3>
+          <p><del>100dh</del> 90dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/42/879246/1.jpg?4169"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button21')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">9obya7</h3>
+          <p><del>100dh</del> 70dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/626836/1.jpg?7427"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button22')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">sndala ta3 jld</h3>
+          <p><del>100dh</del> 200dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/22/688146/1.jpg?7532"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button23')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">ns kom</h3>
+          <p><del>40dh</del> 25dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/52/688146/1.jpg?7816"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button24')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">ns kom</h3>
+          <p><del>40dh</del> 25dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/66/681116/1.jpg?3449"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button25')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">pantofa</h3>
+          <p><del>50dh</del> 40dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/07/485806/1.jpg?3591"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button26')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">triko</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/64/813646/1.jpg?6574"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button27')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">triko</h3>
+          <p><del>30dh</del> 20dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/43/896626/1.jpg?0123"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button28')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">kswa</h3>
+          <p><del>100dh</del> 60dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/10/260926/1.jpg?5084"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button29')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">7idae</h3>
+          <p><del>40dh</del> 30dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/35/191246/1.jpg?5242"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button30')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">kaskita</h3>
+          <p><del>40dh</del> 30dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/71/823414/1.jpg?7849"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button31')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">sndala</h3>
+          <p><del>20dh</del> 15dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/45/924916/1.jpg?4996"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button32')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">srwal</h3>
+          <p><del>50dh</del> 40dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/38/268016/1.jpg?8095"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button33')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">l9wamej lmla7</h3>
+          <p><del>120dh</del> 100dh</p>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.ariffino.net/wp-content/uploads/2017/06/sinaa-taklidya.jpg"
+            target="_blank"
+          >
+            <img
+              src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/39/542526/1.jpg?2130"
+              alt="" /></a
+          ><button class="cart-button" onclick="in_cart('button34')">
+            <span class="add-to-cart"
+              ><img src="add-to-cart.png" alt="" width="30px"
+            /></span>
+            <span class="added"
+              ><img src="added-to-cart.png" alt="" width="30px"
+            /></span>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-box"></i>
+          </button>
+          <h3 class="products-name changeColor">mayo</h3>
+          <p><del>20dh</del> 10dh</p>
+        </div>
+      </article>
+      <div class="slide-controls">
+        <button id="prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="forspace"></div>
+    </div>
+    <footer id="100">
+      <div class="headFooter">
+        <button>get start</button>
+      </div>
+      <div class="bodyFooter">
+        <ul>
+          <strong>About</strong>
+          <br />
+          <br />
+          <li>how it work</li>
+          <br />
+          <li>fallback</li>
+          <br />
+          <li>comment</li>
+          <br />
+          <li>help</li>
+        </ul>
+        <ul>
+          <strong>pay with</strong>
+          <br />
+          <br />
+          <i class="fa-brands fa-cc-paypal" style="margin: 5px"></i>
+          <i class="fa-brands fa-cc-visa" style="margin: 5px"></i>
+          <br />
+          <i class="fa-brands fa-cc-apple-pay" style="margin: 5px"></i>
+          <i class="fa-brands fa-cc-amazon-pay" style="margin: 5px"></i>
+          <br />
+          <i class="fa-brands fa-google-pay" style="margin: 5px"></i>
+        </ul>
+        <ul>
+          <strong>stay connected</strong>
+          <br />
+          <br />
+          <i class="fa-brands fa-facebook" style="margin: 5px"></i>
+          <i class="fa-brands fa-instagram" style="margin: 5px"></i>
+          <i class="fa-brands fa-facebook-messenger" style="margin: 5px"></i>
+          <br />
+          <i class="fa-brands fa-x-twitter" style="margin: 5px"></i>
+          <i class="fa-brands fa-whatsapp" style="margin: 5px"></i>
+        </ul>
+      </div>
+
+      <div class="copy">
+        <p>&copy; oussama.amkhou</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="site.js"></script>
+  </body>
+</html>
