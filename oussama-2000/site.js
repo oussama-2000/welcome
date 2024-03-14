@@ -10,7 +10,7 @@ function search_onblur() {
   searchResult.style.display = "none";
 }
 function my_cart() {
-  location.href = "http://127.0.0.1:5500/forphp.html?";
+  // location.href = "http://127.0.0.1:5500/forphp.html?";
 }
 
 function setopacitybody() {
